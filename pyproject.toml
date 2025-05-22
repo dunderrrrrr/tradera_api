@@ -3,7 +3,7 @@ authors = ["dunderrrrrr <emil.bjorkroth@gmail.com>"]
 description = "A python API wrapper for tradera.se"
 name = "tradera_api"
 readme = "README.md"
-version = "0.2.0"
+version = "0.0.1"
 
 [tool.poetry.dependencies]
 httpx = "^0.27.0"
