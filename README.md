@@ -25,7 +25,9 @@ This will search for term "ESP32" across all categories using `AuctionType.all` 
 
 ```py
 >>> from tradera_api import TraderaAPI
->>> print(TraderaAPI().search("ESP32"))
+>>> api = TraderaAPI()
+>>> api.search("ESP32")
+...
 ```
 
 ### 🔎 Filtering
@@ -36,7 +38,8 @@ Use `Sorting`, `AuctionType`, `Category` and `price` to filter your search. For 
 
 ```py
 >>> from TraderaAPI import Sorting, AuctionType, Category
->>> TraderaAPI().search(
+>>> api = TraderaAPI()
+>>> api.search(
    query="ESP32", 
    category=Category.hobby,
    price=(50, 200), # from 50 SEK to 200 SEK
